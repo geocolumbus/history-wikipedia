@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
         log.debug("Application start.");
-        if (args != null) {
-            if (args[0] == "test=true") {
+        if (args != null && args.length > 0) {
+            if (args[0].equals("test=true")) {
                 return;
             }
         }
